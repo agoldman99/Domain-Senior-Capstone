@@ -1,0 +1,877 @@
+/* CSS files add styling rules to your content */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (min-width: 1280px) {
+  #media-toosmall {
+    display: none;
+    margin:0;
+    position: relative;
+    width: 100%;
+    height: 120vh;
+    z-index: 999;
+    background-color: #D1574F;
+    padding: 10%;
+  }
+}
+
+#media-toosmall {
+  margin:0;
+  position: relative;
+  width: 100%;
+  height: 120vh;
+  z-index: 999;
+  background-color: #D1574F;
+  padding: 10%;
+} 
+
+/*typefaces*/
+/* Obviously Narrow typeface info {
+font-family: obviously-narrow,sans-serif;
+font-weight: 400;
+font-style: normal; } */
+
+/*Obviously Narrow Black typeface info {
+font-family: obviously-narrow,sans-serif;
+font-weight: 800;
+font-style: normal;}*/
+
+/*Brandon Grotesque Regular typeface info {
+font-family: brandon-grotesque,sans-serif;
+font-weight: 400;
+font-style: normal; }*/
+
+/*Brandon Grotesque Bold typeface info {
+font-family: brandon-grotesque,sans-serif;
+font-weight: 700;
+font-style: normal;}*/
+
+
+
+body {
+    display: block;
+    position: static;
+    font-family: brandon-grotesque, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: #f6f5eb;
+  }
+  
+  /*--------HEADING/TEXT STYLING--------------------------------------------*/
+  
+  h1 {
+    font-family: obviously-narrow,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    /* font-size: 150px; */
+    font-size: 10vw;
+    color: #0d2d53;
+    margin:0;
+    /* line-height: 8rem; */
+    line-height: 9vw; }
+  
+  /* MATERIALS NAME STYLE*/
+  h2 {
+    font-family: obviously-narrow,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    color: #0d2d53; }
+  
+  /* NAVIGATION BAR IS H3 */
+  h3 {
+    color: #0d2d53;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline; }
+  
+  /*same as h2, just in orange*/
+  h5 {
+    font-size: 20px;
+    color: #FF9F69;
+    margin: 0;  }
+
+  /*light blue, small subheadings*/
+  h6 {
+    font-size: 14px;
+    color: #BBE0EC;
+    margin:0;}
+  
+  /*white paragraph text*/
+  .act-block-text {
+    font-size: 14px;
+    color: #f6f5eb; }
+
+  /*styles for source links*/
+  .source {
+    font-size: 16px;
+    color: #0d2d53;
+    margin-top: 2rem;
+  }
+  
+  
+  
+  
+  
+  
+  /*-------CONTAINER STYLING---------------------------------------*/
+  
+  .main-container {
+    display: block;
+    width: 100%;
+    height: 6000px;
+    position: static;
+    /*"overflow:hidden" caused "position:sticky" later on to not work*/
+    /* overflow-x: hidden; */
+  }
+  
+  /* PAGE HEADER SECTION*/
+  .header {
+    display: block;
+    width: 100%;
+    height: 8rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    top: 0;
+    position: relative;
+    z-index: 12;
+  }
+  
+  .nav-bar {
+    display: block;
+    margin-left: 80%;
+    margin-right: 6rem;
+    position: static;
+    background-color: #f6f5eb;
+  }
+
+  .website-title {
+    color: #FF9F69;
+    float:center;
+    /* border: 1px solid #0d2d53; */
+  }
+  
+  /*ABOUT PLAY BUTTON*/
+  .nav-bar-button1 {display: block; margin:0;
+    /* border: 1px solid #0d2d53;*/}
+  a:link { color: #0d2d53; text-decoration: none;}
+  a:visited {color: #0d2d53; text-decoration: none;}
+  a:hover {color: #28B8D8; text-decoration: none;}
+  
+  /*MATERIALS FOR PLAY BUTTON*/
+  .nav-bar-button2 {display: block; margin:0;
+    /*border: 1px solid #0d2d53;*/}
+  a:link { color: #0d2d53; text-decoration: none;}
+  a:visited {color: #0d2d53; text-decoration: none;}
+  a:hover {color: #FF9F69; text-decoration: none;}
+
+  /*---INVERSE NAV COLORS---*/
+  /*ABOUT PLAY BUTTON*/
+  .inverse-nav-bar-button1 {flex: 50%;}
+  a.inverse-nav-bar-button1:link { color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button1:visited {color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button1:hover {color: #28B8D8; text-decoration: none;}
+  
+  /*MATERIALS FOR PLAY BUTTON*/
+  .inverse-nav-bar-button2 {flex: 50%;}
+  a.inverse-nav-bar-button2:link { color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button2:visited {color: #f6f5eb; text-decoration: none;}
+  a.inverse-nav-bar-button2:hover {color: #FF9F69; text-decoration: none;}
+  
+  
+
+  /*HOME PAGE, LONG QUOTE*/
+  .home-long-quote {
+    position: absolute;
+    top: 10%;
+    font-family: obviously-narrow,sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 120px;
+    text-align: center;
+    white-space: nowrap;
+
+    margin:0;
+    left: 50%;
+    -ms-transform: translateX( -50%);
+    transform: translateX(-50%);
+    letter-spacing: 3px;
+    line-height: .85;
+  }
+
+
+/*---------DRAWING CANVAS----------------------------------------------------*/
+* {
+  box-sizing: border-box;
+} 
+
+ .canvas-body {
+   /*border: 2px solid grey;*/
+   border-radius:50%;
+   width:100%; 
+   height:100%;
+   position: absolute; 
+   top: 50%; 
+   left:50%; 
+   margin-right:-50%; 
+   transform: translate(-50%,-50%);
+} 
+
+.canvas { /*actual drawing canvas*/
+   display: block;
+   width:100%; 
+   height:100%;
+}
+
+#clear { /*canvas clear button*/
+  font-size: 1rem;
+  /* because of flexbox this pushes over */
+  /* to the far right side */
+  margin-top: 8%;
+}
+
+
+
+/*CIRCLE flip card HOME section*/
+/* The flip card container - set the width and height to 
+whatever you want. We have added the border property to 
+demonstrate that the flip itself goes out of the box on 
+hover (remove perspective if you don't want the 3D effect */
+.circle-flip-card {
+  background-color: transparent;
+  /*width and height at 100%, so fills the "grid-activities-item" width/height*/
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /*Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and 
+back side */
+.circle-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse 
+over the flip box container */
+.circle-flip-card:hover .circle-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.circle-flip-card-front, .circle-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.circle-flip-card-front {
+  background-color: #D1574F;
+  color: #0d2d53;
+  border-radius: 50%;
+}
+
+/* Style the back side */
+.circle-flip-card-back {
+  background-color: #FF9F69;
+  color: #f6f5eb;
+  transform: rotateY(180deg);
+  height: 100%;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+/*div to control quote text size so no spill outside circle*/
+.quote-text-circle {
+  width: 90%;
+  height: 90%;
+}
+
+
+
+
+
+/* --------BOTTOM HOME PAGE -- MATERIAL PAGE SECTION----------*/
+.material-section-home {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 310%;
+  justify-content: center;
+}
+
+.mat-description-div-home {
+  height: 10rem;
+  display: block;
+  position: absolute;
+  width: 100%;
+  /*this might have caused the random horizontal scroll??*/
+  /* margin-left: 6rem;
+  margin-right: 6rem; */
+  /* border: 1px solid #FF9F69; */
+  padding: 6rem;
+}
+
+.material-description-home {
+  display: block;
+  position: relative;
+  /* border: 1px solid #FF9F69; */
+  text-align: center;
+
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.grid-material-home {
+  display: grid;
+  /* grid-template-columns: 20% 20% 20% 20%; */
+  grid-template-columns: 46% 46%;
+  grid-column-gap: 5%;
+  /* border: 1px solid #0d2d53; */
+  padding: 2rem;
+  position: absolute;
+  top: 10rem;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.grid-item-home {
+  /* border: 1px solid #0d2d53; */
+  margin:0;
+}
+
+.material-box-home {
+  display: block;
+  background-color: #f6f5eb;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  height: 100%;
+  padding: 3rem;
+  border-radius: 50%;
+}
+.material-box-home:hover {
+  border: 2px solid #0d2d53;
+}
+
+ 
+
+
+
+
+  
+  
+  /* --------MATERIAL PAGE SECTION----------------------------------------*/
+  .material-section {
+    display: block;
+    width: 100%;
+    position: static;
+  }
+
+  .mat-description-div {
+    display: block;
+    /* position: absolute; */
+    width: 100%;
+    /*this might have caused the random horizontal scroll??*/
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
+    /* border: 1px solid #FF9F69; */
+    padding: 1rem;
+  }
+
+  .material-description {
+    display: block;
+    position: relative;
+    width: 100%;
+    /* border: 1px solid #FF9F69; */
+    text-align: center;
+    padding: 1rem;
+
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .grid-material {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-column-gap: 5%;
+    /* border: 1px solid #0d2d53; */
+    padding: 2rem;
+    position: static;
+    /* position: absolute; */
+    /* top: 50%; */
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+  }
+
+  .grid-aboutplay {
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    grid-column-gap: 5%;
+    /* border: 1px solid #0d2d53; */
+    padding: 2rem;
+    padding-left:10rem;
+    padding-right:10rem;
+    position: static;
+    width: 100%;
+    height: 100px;
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
+    /* background-color:#f6f5eb; */
+    justify-content: center;
+  }
+
+  #grid-aboutplayindex-id {
+    /* background-color: #D1574F;
+    border-radius: 50%; */
+    /* overflow: hidden; */
+    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
+    position: sticky; /* Sticky/fixed navbar */
+    width: 100%;
+    top: 5%; /* At the top */
+    z-index: 99;
+  }
+  
+  .grid-item {
+    /*border: 1px solid #0d2d53;*/
+    margin:0;
+  }
+  
+  .material-box {
+    display: block;
+    border: 2px solid #0d2d53;
+    background-color: #f6f5eb;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    margin:0;
+    padding:.5rem;
+  }
+  .material-box:hover {
+    outline: 7px solid #0d2d53;
+    outline-offset: -7px;
+  }
+
+
+
+
+/*----------NEW ACTIVITIES SECTION---------------------------------------------------------*/
+.grid-activities {
+  display: grid;
+  grid-template-columns: 24% 24% 24%;
+  grid-column-gap: 5%;
+  /* border: 1px solid #0d2d53; */
+  padding: 2rem;
+  position: static;
+  width: 100%;
+  height: 500px;
+  /* margin-top: 4rem; */
+  justify-content: center;
+}
+.grid-activities-item {
+  /*border: 1px solid #0d2d53;*/
+  margin:0;
+}
+.activities-box {
+  display: block;
+  border: 2px solid #0d2d53;
+  background-color: #f6f5eb;
+  text-align: center;
+  width: 100%;
+  height: 80%;
+  justify-content: center;
+}
+
+.activities-extend {
+  /*uses h3*/
+  background-color:#f6f5eb;
+  border:none;
+  padding:.5rem;
+  height:1rem;
+  text-align: center;
+}
+
+.activities-extend:hover {
+  background-color: #FF9F69;
+}
+
+.nextact-description-div {
+  height: 6rem;
+  display: block;
+  /* position: absolute; */
+  width: 100%;
+  /*this might have caused the random horizontal scroll??*/
+  /* margin-left: 6rem;
+  margin-right: 6rem; */
+  /* border: 1px solid #FF9F69; */
+  padding: 1rem;
+}
+
+.nextact-description {
+  display: block;
+  position: relative;
+  /* border: 1px solid #FF9F69; */
+  text-align: center;
+
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/*flip card activities section*/
+/* The flip card container - set the width and height to 
+whatever you want. We have added the border property to 
+demonstrate that the flip itself goes out of the box on 
+hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  /*width and height at 100%, so fills the "grid-activities-item" width/height*/
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px; /*Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and 
+back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 1.1s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse 
+over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #f6f5eb;
+  color: #0d2d53;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: #0d2d53;
+  color: #f6f5eb;
+  transform: rotateY(180deg);
+  height: 80%;
+  padding: 2rem;
+}
+
+
+
+
+
+  
+  
+  /*---------ACTIVITY GRID SECTION (speclled activity means its old)-------------*/
+  /* .grid-activity {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-column-gap: 5%;
+    border: 1px solid #0d2d53;
+    padding: 2%;
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  } */
+  
+  /* .grid-activity-item {
+    border: 1px solid #0d2d53;
+  } */
+
+  /* .activity-box {
+    display: block;
+    border: 2px solid #0d2d53;
+    background-color: #f6f5eb;
+    text-align: center;
+    width: 95%;
+    height: 80%;
+  } */
+  
+  .act-outline-box {
+    /*display: flex;*/
+    display: block;
+    position: absolute;
+    z-index: 2;
+    /*position: relative;*/
+    transform: translate(35px, -438px);
+    border: 2px solid #0d2d53;
+    background-color: #0d2d53;
+    width: 100%;
+    height: 80%;
+    padding: 1rem;
+  }
+  
+  .act-sum-div {
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  
+  .activity-box:hover + .act-outline-box {
+      z-index: 1;
+  }
+
+    /*expand activity button css*/
+  .act-exp-button {
+      display: block;
+      /* justify-content: center; */
+      border-radius: 50%;
+      background-color:#f6f5eb;
+      color: #0d2d53;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+      font-size: 30px;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+
+
+
+  /*---------WHAT IS PLAY? Page---------------------------------------------------*/
+  #material-section-nav-id {
+    position: -webkit-sticky; /* Safari*/
+    position: sticky;
+    top: 0%;
+    z-index: 10;
+    transition: 0.4s;
+    background-color: #f6f5eb;
+  }
+
+  .what-is-play-section {
+    display: block;
+    width: 100%;
+    /* height: 5300px; */
+    height: 100%;
+    position: static;
+  }
+
+  .what-is-play {
+    /* display: block; */
+    position: absolute;
+    /* position: relative; -- for sections to not be on top of each other*/
+    width: 100%;
+    /*adding height might mess up responsiveness? 
+      unsure, but need to add space somehow...*/
+    /* height: 80rem; */
+    height: 100%;
+    /*not sure why i had a z-index here, but it 
+      was causing the source links to not work*/
+    /* z-index: -2; */
+    top: 20rem;
+    /*this might have been causing the weird horizontal scroll??*/
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
+  }
+
+  .what-is-play-head {
+      display: block;
+      width: 40%;
+      height: 300%;
+      margin-left: 6rem;
+      margin-right: 6rem;
+      /* border: 1px solid #0d2d53; */
+      float: left; 
+  }
+
+  .Q-header {
+      /*uses h1 tag*/
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 20%; 
+  }
+
+  .what-is-play-head-nostick {
+     /*uses h1 tag*/
+     display: block;
+     width: 40%;
+     margin-left: 6rem;
+     margin-right: 6rem;
+     /* border: 1px solid #0d2d53; */
+     float: left;
+  }
+
+  .answer1div {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    height: 100%;
+    margin-left: 6rem;
+    margin-right:6rem;
+    position: static;
+    /* border: 1px solid #0d2d53; */
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    float: right;
+  }
+
+  .answer1 {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 25%; 
+    
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .horizontal-answer-div {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    position: static;
+    /* border: 1px solid #0d2d53; */
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    float: left;
+    overflow: hidden;
+  }
+
+  .next-extend-section {
+    height: 350px;
+    display: block;
+    position: absolute;
+    width: 100%;
+    background-color: #D1574F;
+    /* margin-left: 6rem;
+    margin-right: 6rem; */
+    /* border: 1px solid #FF9F69; */
+  }
+
+  .next-extend-button{
+    color: #0d2d53;
+    background-color: #f6f5eb;
+    border: 2px solid #0d2d53;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1rem;
+
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .next-extend-button:hover {
+    background-color: #0d2d53;
+    color: #f6f5eb;
+  }
+
+
+/*------TYPES OF PLAY SECTION------*/
+.types-of-play-section {
+  display: block;
+  width: 100%;
+  height: 5600px;
+  position: static;
+}
+
+  .types-flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    /* border: 1px solid #FF9F69; */
+    /* width: 40%; */
+  }
+
+
+  .types-flex-item {
+    border: 1px solid #0d2d53;
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  .types-flex-item-horz {
+    border: 1px solid #0d2d53;
+    font-size: 18px;
+    color: #0d2d53;
+    line-height: 1.7rem;
+    margin: 1rem;
+    padding: 1rem;
+  }
+
+  /*------TYPES OF PLAY SECTION------*/
+.play-inequity-section {
+  display: block;
+  width: 100%;
+  height: 2000px;
+  position: static;
+}
+
+
+
+
+/*------EXPANDED ACTIVITY PAGE------*/
+    /*ID is in body tag*/
+#exp-activity-page {
+    background-color:#0d2d53;}
+  
+  
+  /* FOOTER PAGE SECTION
+  .footer {
+    background-color: #D1574F;
+    display: block;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+  } */
+
+
+
+
+  
+  
